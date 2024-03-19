@@ -8,7 +8,7 @@ module.exports = (req, res) => {
   }
 
   const notification = `${req.query.name || 'Someone'} rang the doorbell.`;
-  const accessCode = process.env.ALEXA_ACCESS_CODE;
+  const accessCode = "nmac.P69AHYMHOMRI3HKSWK7AKZABZA45OGQZN4YNTMM";
 
   if (!accessCode) {
     throw new Error('Did you forget to assign ALEXA_ACCESS_CODE?');
